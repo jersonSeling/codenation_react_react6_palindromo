@@ -1,1 +1,1 @@
-# codenation_react_react6_palindromo
+# Palindromo with ReactJS
