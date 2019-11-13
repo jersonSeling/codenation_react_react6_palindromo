@@ -9,17 +9,19 @@ class App extends React.Component {
 
   adicionarItem = (item) => {
     let {items} = this.state
-    items.push({item: item, isPalindromo: "???"})
+    items.push({item: item, isPalindromo: EhPalindromo(item)})
     this.setState({items})
   }
 
       // o Header precisa alterar o estado da List!!!
   render() {
     return (
-      <React.Fragment>
-        <Header addFunc = {this.adicionarItem} />
-        <List data = {this.state.items}/>
-      </React.Fragment>
+
+        <div className="conteudo">
+          <Header addFunc = {this.adicionarItem} />
+          <List data = {this.state.items}/>
+        </div>
+
     );
   }
 }

@@ -1,11 +1,11 @@
 class Item extends React.Component {
   render() {
-    const { children } = this.props;
-
+    console.log(this.props.data)
     return (
-      <li>
-        {children}
-      </li>
+      <div className="container">
+        <div className="container-item">{this.props.data.item}</div>
+        <div className="container-item">{this.props.data.isPalindromo}</div>        
+      </div>
     );
   }
 }
